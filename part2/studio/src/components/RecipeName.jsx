@@ -1,14 +1,9 @@
-import recipedata from "./recipe.json";
+function RecipeName(props) {
 
-function RecipeName() {
-
-  let recipeName = recipedata.map(recipe => {
-    return <h1 key ={recipe.name}>{recipe.name}</h1>
-  })
-
+  let { name } = props.recipe;
   return (
     <div>
-      {recipeName}
+      <h1>{name}</h1>
     </div>
   );
 }

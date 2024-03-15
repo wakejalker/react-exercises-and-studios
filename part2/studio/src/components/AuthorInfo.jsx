@@ -1,32 +1,29 @@
-import './styling.css';
-import recipedata from './recipe.json';
+function AuthorInfo(props) {
 
+  let { author, authorImage, website } = props.recipe;
 
-function AuthorInfo() {
+  const RecipeAuthor = () => <div>{ author }</div>;
 
-  const recipeAuthor = recipedata.map(recipe => {
-    return <div key={recipe.name}>{recipe.author}</div>
-  })
-
-  const recipeAuthorImg = recipedata.map(recipe => {
+  const RecipeAuthorImage = () => {
     return (
-      <div key={recipe.name}>
-        <img src={recipe.authorImage} alt={recipe.author} className="authorImage" />
+      <div>
+        <img src={authorImage} alt={author} className="authorImage" />
       </div>
     )
-  })
+  };
 
-  const recipeWebsite = recipedata.map(recipe => {
-    return <a key={recipe.name} href={recipe.website}>View Recipe on Website</a>
-  })
+  const RecipeWebsite = () => {
+    return <a href={website}>View Recipe on Website</a>;
+  }
 
-   return(
+
+  return (
     <div>
-      {recipeAuthorImg}
-      {recipeAuthor}
-      {recipeWebsite}
+      <RecipeAuthorImage />
+      <RecipeAuthor />
+      <RecipeWebsite />
     </div>
-   );
+  );
  }
  
  export default AuthorInfo;

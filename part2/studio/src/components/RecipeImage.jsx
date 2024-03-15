@@ -1,14 +1,9 @@
-import recipedata from './recipe.json';
-import './styling.css';
+function RecipeImage(props) {
+  let { name, recipeImage } = props.recipe;
 
-function RecipeImage() {
-
-  let recipeImage = recipedata.map(recipe => {
-    return <img key={recipe.name} src={recipe.recipeImage} alt={recipe.name} className="recipeImage" />
-  })
-
-   return <div>{recipeImage}</div>;
- }
+  return <img src={recipeImage} alt={name} className="recipeImage" />;
+ 
+}
  
  export default RecipeImage;
  
