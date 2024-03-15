@@ -13,6 +13,28 @@
        "heavy cream",
        "milk"
      ]
-   }
+   },
+   {
+    "name": "White Chocolate Blueberry Oatmeal Cookies",
+    "author": "Monique Volz",
+    "description": "What’s not to love about chewy blueberry oatmeal cookies bursting with juicy blueberries in between layers of coconut and sweet white chocolate chunks?",
+    "website": "https://www.ambitiouskitchen.com/white-chocolate-blueberry-coconut-oatmeal-cookies/",
+    "recipeImage": "https://www.ambitiouskitchen.com/wp-content/uploads/2019/12/blueberrycookies-2.jpg",
+    "authorImage": "https://www.ambitiouskitchen.com/wp-content/uploads/2019/09/monique2-916x916.jpg",
+    "ingredients": [
+      "coconut oil",
+      "dark brown sugar",
+      "vanilla",
+      "almond extract",
+      "egg",
+      "flour",
+      "rolled oats",
+      "baking soda",
+      "salt",
+      "coconut flakes",
+      "white chocolate chunks",
+      "frozen blueberries"
+    ]
+  }
  ]
  
